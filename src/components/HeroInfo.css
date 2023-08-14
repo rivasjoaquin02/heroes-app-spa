@@ -1,0 +1,20 @@
+.hero-info {
+    display: flex;
+    gap: min(5vw, 50px);
+    width: 100%;
+}
+
+.hero-info__picture {
+    height: max(20vh, 500px);
+    border-radius: 10px;
+}
+
+/* .hero-info__description {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+} */
+
+.hero-info__description div > span {
+    font-weight: bold;
+}

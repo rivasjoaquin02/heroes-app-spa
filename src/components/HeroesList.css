@@ -1,0 +1,56 @@
+:root {
+    --card-width: 200px;
+}
+
+.heroes-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+}
+
+.hero-card {
+    border: 1px solid gray;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.hero-card__img {
+    border-radius: 4px;
+    width: var(--card-width);
+    height: auto;
+}
+
+.hero-card__description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px 0;
+    width: var(--card-width);
+}
+
+.hero-card__name {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.hero-card__alterego {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.hero-card__characters {
+    padding-left: 0;
+    list-style: none;
+
+    display: flex;
+    column-gap: 8px;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+}
+
+.hero-card__first-appearance {
+    font-size: 0.8rem;
+}
