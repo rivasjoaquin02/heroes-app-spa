@@ -1,5 +1,5 @@
 import { redirect, useLoaderData, useNavigate } from "react-router-dom";
-import { getHeroById } from "../selectors/getHeroById";
+import { getHeroById } from "../helpers/getHeroById";
 import { Hero } from "../data/data";
 import "./HeroInfo.css";
 
@@ -21,7 +21,7 @@ const HeroInfo = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="hero-info">
+        <div className="hero-info fadeIn-left">
             <img
                 className="hero-info__picture"
                 src={`/heroes/${id}.jpg`}

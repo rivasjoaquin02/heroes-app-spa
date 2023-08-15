@@ -1,11 +1,15 @@
 import { useNavigate } from "react-router-dom";
+import { AuthConsumer as useAuth } from "../../../hooks/useAuth";
 
 const Login = () => {
+    const { login } = useAuth();
+
     const navigate = useNavigate();
     const handleLogin = () => {
-        console.log("Login");
-
-        navigate(-1);
+        login({
+            username: "johndoe",
+            password: "secret",
+        }).then(() => navigate("/"));
     };
 
     return (

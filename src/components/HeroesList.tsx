@@ -1,17 +1,14 @@
 import { Link } from "react-router-dom";
-import { Publisher } from "../data/data";
-import { getHeroByPublisher } from "../selectors/getHeroByPublisher";
+import { Hero } from "../data/data";
 import "./HeroesList.css";
 
 interface Props {
-    publisher: Publisher;
+    heroes: Array<Hero>;
 }
 
-const HeroesList = ({ publisher }: Props) => {
-    const heroes = getHeroByPublisher(publisher);
-
+const HeroesList = ({ heroes }: Props) => {
     return (
-        <ul className="heroes-list">
+        <ul className="heroes">
             {heroes.map((hero) => (
                 <li key={hero.id} className="hero-card">
                     <img
